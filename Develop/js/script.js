@@ -16,10 +16,13 @@ $('.search-btn').on('click', () => {
   URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityname},${stateCode},${countryCode}&appid=${ApiKey}&units=metric`
 
 
+
+
   searchHistory.forEach((value) => {
     let li = $(`<li class="list-group-item">${value}</li>`)
     $('.list-group').append(li)
   })
+
 
   searchHistory.push(cityname)
 
